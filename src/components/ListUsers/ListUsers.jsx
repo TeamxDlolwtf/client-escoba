@@ -8,7 +8,7 @@ export default function ListUsers(){
     const socket = useSelector(state => state.socket);
     const dispatch = useDispatch();
     
-    const setUsers = useCallback((users) => dispatch(setUsersLists(users)));
+    const setUsers = useCallback((users) => dispatch(setUsersLists(users)),[]);
 
     useEffect(()=>{
 
