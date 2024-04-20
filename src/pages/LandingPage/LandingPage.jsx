@@ -1,7 +1,10 @@
 import { useSelector,useDispatch } from "react-redux";
-import { useState,useCallback } from "react";
+import { useState } from "react";
 import { setUserData } from "../../redux/actions-types";
 import { useNavigate } from "react-router-dom";
+import styled from "./landing.module.css";
+import logo from "../../assets/logo.png";
+import arrow from "../../assets/arrow-right.svg";
 
 export default function LandingPage(){
     const [name, setName] = useState();
@@ -9,7 +12,7 @@ export default function LandingPage(){
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const handleOnChage = (e) =>{
+    const handleOnChange = (e) =>{
         const {value} = e.target
         setName(value);
     } 
@@ -22,10 +25,16 @@ export default function LandingPage(){
     
 
     return(
-        <>
-        <h1>LandingPage</h1>
-        <label>Nick: <input type="text"  onChange={ (e)=> handleOnChage(e)} placeholder="Ingresar nombre"/></label>
-        <button onClick={handleOnClick}>Ingresar</button>
-        </>
+        <section className={styled.pageContainer}>
+        <img src={logo} alt="logo de la paguina" className={styled.logo}>
+        </img>
+        <div className={styled.container}>
+        <label>Nick</label>
+        <div  className={styled.containerInput}>
+        <input type="text"  onChange={ (e)=> handleOnChange(e)} placeholder="Ingresar nombre"/>
+        <img className= {styled.btn_arrow} onClick={handleOnClick} src={arrow} alt="ingresar a la app" />
+        </div>
+        </div>
+        </section>
     )
 }
