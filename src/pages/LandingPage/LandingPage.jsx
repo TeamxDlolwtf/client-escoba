@@ -17,6 +17,8 @@ export default function LandingPage(){
         setName(value);
     } 
 
+    
+
     const handleOnClick = ()=>{
         socket.emit('createUser',{socketId: socket.id, name});
         dispatch(setUserData(name));
