@@ -3,7 +3,7 @@
 .pageContainer{
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(#442E2E,#090808);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;

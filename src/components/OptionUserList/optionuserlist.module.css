@@ -1,0 +1,23 @@
+.container{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    z-index: 99999;
+}
+
+.options{
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    list-style: none;
+    font-size: 16px;
+    background: rgba(126, 123, 123, 0.219);
+    top:60%;
+    padding: 0;
+    left: 60%;
+    width: 100%;
+}
+
+.options:hover{
+    color:rgba(255, 0, 0, 0.705);
+}

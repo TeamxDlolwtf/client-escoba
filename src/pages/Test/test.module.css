@@ -1,21 +1,10 @@
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
     overflow: hidden;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     display: grid;
     background: radial-gradient(#442E2E,#090808);
-    grid-template: 
-    "listroom listuser" 100% / 80% auto; 
-    color:#fff;
-}
-
-.listRooms{
-    grid-area: "listroom";
-}
-
-.listUsers{
-    grid-area: "listuser";
 }

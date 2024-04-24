@@ -1,0 +1,18 @@
+.profile{
+    width: 100px;
+}
+
+.name{
+    position: relative;
+    top:-80%;
+    left: 25%;
+}
+
+.container{
+    width: 10%;
+    display: grid;
+}
+
+.profileJoin{
+    width: 100px;
+}
