@@ -1,0 +1,20 @@
+.container{
+    height: auto;
+    text-wrap: wrap;
+    width: 100%;
+    display: flex;
+    gap:2rem;
+    color:#fff;
+    font-size: 1.5rem;
+    align-items: center;
+    border-bottom: solid 1px #fff;
+    border-bottom-width: 20%;
+    margin: .5rem;
+}
+
+.profile{
+    width: 20%;
+    max-width: 90px;
+    height: auto;
+    max-height: 60px;
+}

@@ -1,0 +1,58 @@
+.containerNav{
+    width: 100vw;
+    height: auto;
+    max-height: 5%;
+    background-color: transparent;
+    display: flex;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.Options ul{
+    color: #fff;
+    font-size: 1.2rem;
+    width:70vw;
+    height: 70%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: end;
+    padding-bottom: .8rem;
+    cursor: pointer;
+}
+
+.containerModal{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(124, 120, 120, 0.089);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:35%;
+    left: 12%;
+    z-index: 99999;
+}
+.containerModalInvite{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:35%;
+    left: 12%;
+    z-index: 99999;
+    background-color: rgba(88, 25, 25, 0.808);
+}
+.closeModal{
+    align-self: flex-end;
+    justify-self: end;
+    background-color: transparent;
+    color:rgba(255, 0, 0, 0.466);
+    border: 1px solid;
+    cursor: pointer;
+}

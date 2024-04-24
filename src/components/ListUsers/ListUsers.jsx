@@ -1,7 +1,8 @@
 import { useEffect,useCallback,useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setUsersLists } from "../../redux/actions-types";
-
+import User from "../User/User";
+import styled from "./listusers.module.css";
 
 export default function ListUsers(){
     const [listUsers, setListUsers] = useState(null);
@@ -24,17 +25,17 @@ export default function ListUsers(){
     },[setUsers,socket]);
 
     return(
-        <section>
-            <label>Users: {listUsers && listUsers.length} </label>
+        <aside className={styled.container}>
+            <label className={styled.title}> Lista de usuarios </label>
             {
                 listUsers && listUsers.length && listUsers.map((user) => {
                     return (
-                        <div key={user.socketId}>
-                            <p>{user.name}</p>
-                        </div>
+                        <section className={styled.containerList} key={user.socketId}>
+                            <User user={user} />
+                        </section>
                     )
                 })
             }
-        </section>
+        </aside>
     )
 }

@@ -1,6 +1,7 @@
 import ListUsers from "../../components/ListUsers/ListUsers";
-import CreateRoom from "../../components/CreateRooms/CreateRoom";
 import ListRooms from "../../components/ListRooms/ListRooms";
+import styled from "./home.module.css";
+import { useState } from "react";
 
 export default function Home(){
 
@@ -8,18 +9,9 @@ export default function Home(){
 
     
     return(
-        <>
-        <h1>Home</h1>
-        <article>
-            <CreateRoom />
-        </article>
-        <section>
-            <h2>Rooms:</h2>
-            <ListRooms/>
-        </section>
-        <aside>
-            <ListUsers />
-        </aside>
-        </>
+        <main className={styled.container}>
+            <ListRooms className={styled.listRooms}/>
+            <ListUsers className={styled.listUsers}/>
+        </main>
     )
 }
